@@ -26,11 +26,7 @@ const menus = [{nombre:"Inicio", url:"index.html"},
         {nombre:"Pc Gamer", precio:"8000", img:"Imagenes/p.jpg", id:"8"}
 
     ]
-      if (cantidadTotal  > 0) {
-    
-} else {
-    
-}
+
 
     function cargarproductos() {
         let ventas = document.getElementById("boxproducto");
@@ -60,6 +56,13 @@ const menus = [{nombre:"Inicio", url:"index.html"},
        
         let cantidadTotal = parseInt(localStorage.getItem("cantidadCarrito"), 10) || 0;
     
+        if (cantidadTotal  > 20) {
+    
+            alert ("limite de compra")
+            
+            } else {
+                
+            }
         
         const cantidadCarritoElement = document.getElementById("cantidad-carrito");
         if (cantidadCarritoElement) {
