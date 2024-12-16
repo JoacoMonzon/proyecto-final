@@ -26,7 +26,12 @@ const menus = [{nombre:"Inicio", url:"index.html"},
         {nombre:"Pc Gamer", precio:"8000", img:"Imagenes/p.jpg", id:"8"}
 
     ]
+      if (cantidadTotal  > 0) {
     
+} else {
+    
+}
+
     function cargarproductos() {
         let ventas = document.getElementById("boxproducto");
         for (const producto of productos) {
