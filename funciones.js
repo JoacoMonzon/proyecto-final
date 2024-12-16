@@ -16,14 +16,14 @@ const menus = [{nombre:"Inicio", url:"index.html"},
     
     cargarmenu();
     
-    const productos = [{nombre:"Heladera", precio:"1000", img:"imagenes/h.jpg", id: "1"},
-        {nombre:"Tele", precio:"6000", img:"imagenes/t.jpg", id:"6"},
-        {nombre:"Lavaropas", precio:"3000", img:"imagenes/l.jpg", id:"3"},
-        {nombre:"Microondas", precio:"4000", img:"imagenes/m.jpg", id:"4"},
-        {nombre:"Secadora", precio:"5000", img:"imagenes/s.jpg", id:"5"},
-        {nombre:"Gabinete", precio:"6000", img:"imagenes/g.jpg", id:"6"},
-        {nombre:"Monitor", precio:"7000", img:"imagenes/mm.webp", id:"7"},
-        {nombre:"Pc Gamer", precio:"8000", img:"imagenes/p.jpg", id:"8"}
+    const productos = [{nombre:"Heladera", precio:"1000", img:"Imagenes/h.jpg", id: "1"},
+        {nombre:"Tele", precio:"6000", img:"Imagenes/t.jpg", id:"6"},
+        {nombre:"Lavaropas", precio:"3000", img:"Imagenes/l.jpg", id:"3"},
+        {nombre:"Microondas", precio:"4000", img:"Imagenes/m.jpg", id:"4"},
+        {nombre:"Secadora", precio:"5000", img:"Imagenes/s.jpg", id:"5"},
+        {nombre:"Gabinete", precio:"6000", img:"Imagenes/g.jpg", id:"6"},
+        {nombre:"Monitor", precio:"7000", img:"Imagenes/mm.webp", id:"7"},
+        {nombre:"Pc Gamer", precio:"8000", img:"Imagenes/p.jpg", id:"8"}
 
     ]
     
