@@ -1,5 +1,4 @@
 const menus = [{nombre:"Inicio", url:"index.html"},
-    {nombre:"¿Quienes somos?", url:""},
     {nombre:"Contacto", url:"contacto.html"},
     ]
     
@@ -33,14 +32,20 @@ function cargarproducto() {
         
     enlaces.appendChild(lista);
 }
-
 cargarproducto();
 
 let contador = 0;
-function sumar(){
-    contador = contador + 1;
-    document.getElementById("contarproducto").innerHTML = contador;
+
+function sumar() {
+    let nstock = productodetalle.stock;  // Asegúrate de que 'productodetalle' esté definido correctamente
+    if (contador < nstock) {
+        contador++;
+        document.getElementById("contarproducto").innerHTML = contador;
+    } else {
+        alert("Stock agotado!");
+    }
 }
+
 
 function restar(){
     if(contador > 0){
@@ -73,10 +78,10 @@ function cargarcarrito(){
 }
 
 function actualizarCarrito() {
-    // Recuperar la cantidad desde localStorage
+ 
     let cantidadTotal = parseInt(localStorage.getItem("cantidadCarrito"), 10) || 0;
 
-    // Actualizar el contador en el ícono del carrito
+    
     const cantidadCarritoElement = document.getElementById("cantidad-carrito");
     if (cantidadCarritoElement) {
         cantidadCarritoElement.textContent = cantidadTotal;
