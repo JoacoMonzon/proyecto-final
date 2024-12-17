@@ -1,5 +1,4 @@
 const menus = [{nombre:"Inicio", url:"index.html"},
-    {nombre:"¿Quienes somos?", url:""},
     {nombre:"Contacto", url:"contacto.html"},
    
     ]
@@ -15,17 +14,16 @@ const menus = [{nombre:"Inicio", url:"index.html"},
     }
     
     cargarmenu();
-    
-    const productos = [{nombre:"Heladera", precio:"1000", img:"Imagenes/h.jpg", id: "1"},
-        {nombre:"Tele", precio:"6000", img:"Imagenes/t.jpg", id:"6"},
-        {nombre:"Lavaropas", precio:"3000", img:"Imagenes/l.jpg", id:"3"},
-        {nombre:"Microondas", precio:"4000", img:"Imagenes/m.jpg", id:"4"},
-        {nombre:"Secadora", precio:"5000", img:"Imagenes/s.jpg", id:"5"},
-        {nombre:"Gabinete", precio:"6000", img:"Imagenes/g.jpg", id:"6"},
-        {nombre:"Monitor", precio:"7000", img:"Imagenes/mm.webp", id:"7"},
-        {nombre:"Pc Gamer", precio:"8000", img:"Imagenes/p.jpg", id:"8"}
-
-    ]
+    const productos = [
+        {nombre: "Heladera", precio: "1000", img: "Imagenes/h.jpg", id: "1", stock: 10},
+        {nombre: "Tele", precio: "6000", img: "Imagenes/t.jpg", id: "2", stock: 10},
+        {nombre: "Lavaropas", precio: "3000", img: "Imagenes/l.jpg", id: "3", stock: 10},
+        {nombre: "Microondas", precio: "4000", img: "Imagenes/m.jpg", id: "4", stock: 10},
+        {nombre: "Secadora", precio: "5000", img: "Imagenes/s.jpg", id: "5", stock: 10},
+        {nombre: "Gabinete", precio: "6000", img: "Imagenes/g.jpg", id: "6", stock: 10},
+        {nombre: "Monitor", precio: "7000", img: "Imagenes/mm.webp", id: "7", stock: 10},
+        {nombre: "Pc Gamer", precio: "8000", img: "Imagenes/p.jpg", id: "8", stock: 10}
+    ];
 
 
     function cargarproductos() {
@@ -55,14 +53,7 @@ const menus = [{nombre:"Inicio", url:"index.html"},
     function actualizarCarrito() {
        
         let cantidadTotal = parseInt(localStorage.getItem("cantidadCarrito"), 10) || 0;
-    
-        if (cantidadTotal  > 20) {
-    
-            alert ("limite de compra")
-            
-            } else {
-                
-            }
+
         
         const cantidadCarritoElement = document.getElementById("cantidad-carrito");
         if (cantidadCarritoElement) {
